@@ -1,4 +1,6 @@
-﻿namespace ClassHomeTask
+﻿using System.Security.Principal;
+
+namespace ClassHomeTask
 {
     internal class Program
     {
@@ -7,6 +9,8 @@
             Account account = new Account("Admin", "AdminEA18yr@");
             Console.WriteLine(account.Username);
             Console.WriteLine(account.Password);
+            account.LoginName();
+
             Console.WriteLine("=============");
 
 
